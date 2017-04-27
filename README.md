@@ -25,10 +25,10 @@ npm run build       // 生产部署
 	|-- config                                 // 项目打包路径
 	|-- dist                                   // 静态文件目录
 	|-- src      							   // 源码目录
-	|-- |-- assets							   // 资源文件夹
+	|	|-- assets							   // 资源文件夹
 	|		|-- js							   // 模拟数据文件
-	|           |-- addressData.js              // 地址数据
-	|           |-- testData.js 				   // 测试数据
+	|           |-- addressData.js             // 地址数据
+	|           |-- testData.js 			   // 测试数据
 	|   |-- components                         // 组件
 	|       |-- address.vue                    // 地址选择组件
     |   |-- page  							   // 页面
