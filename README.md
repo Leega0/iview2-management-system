@@ -7,7 +7,7 @@
 --------------
 ### 目前实现的功能及用到的组件
 - [x] 页面： [iView2.0](https://github.com/iview/iview)
-- [x] 图表： [百度Echarts](http://echarts.baidu.com)&amp[Vue-Echarts](https://github.com/xlsdg/vue-echarts-v3)
+- [x] 图表： [百度Echarts](http://echarts.baidu.com)&[Vue-Echarts](https://github.com/xlsdg/vue-echarts-v3)
 - [x] 文件上传： [使用iView自带的文件上传组件](https://www.iviewui.com/components/upload)
 
 --------------
