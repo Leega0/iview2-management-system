@@ -1,6 +1,4 @@
-# gongyingshang
-
-> 供应商平台
+# iview2.0 后台系统
 
 ## Build Setup
 
