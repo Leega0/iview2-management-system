@@ -2,7 +2,7 @@
 
 基于Vue2 + iView2.0的后台管理系统解决方案简单示例.
 
-线上访问(不支持手机)：[电脑访问](https://leega0.github.io/iview2-management-system/)
+线上访问(不支持手机)：[电脑访问](https://leega0.github.io/iview2-management-system/dist/)
 
 --------------
 ### 目前实现的功能及用到的组件
