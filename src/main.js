@@ -3,7 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import VueRouter from 'vue-router'
-import VueResource from 'vue-resource'
+// import VueResource from 'vue-resource'
+import axios from 'axios';
 // 路由配置文件
 import routeConfig from './router'
 import iView from 'iview'
@@ -14,7 +15,6 @@ import store from './store'
 
 // 加载路由中间件
 Vue.use(VueRouter)
-Vue.use(VueResource)
 Vue.use(iView)
 
 // 定义路由
