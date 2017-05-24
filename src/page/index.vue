@@ -18,9 +18,9 @@
     <Row type="flex" class="main">
       <!-- 左侧导航 -->
       <div class="main-left">
-          <Menu theme="light" :activeName="activePage" @on-select="routeTo">
-            <Menu-item name="1">活动发布 </Menu-item>
-            <Menu-item name="2">活动管理</Menu-item>
+          <Menu theme="light" :active-name="setActive" @on-select="routeTo">
+            <Menu-item name="activePublic">活动发布 </Menu-item>
+            <Menu-item name="activeManage">活动管理</Menu-item>
           </Menu>
       </div>
       <div class="main-right">
@@ -38,23 +38,23 @@ export default {
   data(){
     return {
       headerFixed : true,
-      activePage:'1',
-      page:[{
-        index:1,
-        name:'activePublic'
-      },{
-        index:2,
-        name:'activeManage'
-      }]
+      page:['activePublic','activeManage']
     }
   },
-  created:function(){
-    this.$router.push('/activePublic');
+  computed:{
+    setActive:function(){
+      // 拿到对应的路由
+      if (this.$route.path.split("/").length>2) {
+        return this.$route.path.replace('/','').split("/")[0];
+      }else{
+        return this.$route.path.replace('/','');
+      }
+    }
   },
   methods:{
     routeTo:function(e){
-      this.$router.push('/'+this.$data.page[e - 1].name);
-    }
+        this.$router.push('/'+e);
+      } 
   }
 }
 </script>

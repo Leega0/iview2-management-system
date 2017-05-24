@@ -19,7 +19,7 @@ Vue.use(iView)
 
 // 定义路由
 const router = new VueRouter({
-  routes:routeConfig
+  routes:routeConfig,
 })
 
 Vue.config.productionTip = false
@@ -28,6 +28,5 @@ Vue.config.productionTip = false
 new Vue({
   router,
   store,
-  el:"#app",
   render: h => h(App)
-})
+}).$mount('#app')
